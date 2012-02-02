@@ -20,7 +20,8 @@ Requirements
 
 How to Install
 --------------
-Shell command::
+
+Shell command ::
 
   python setup.py install
 
@@ -33,6 +34,7 @@ How to Use
 ==========
 Script Usage
 ------------
+
 Shell Commands::
 
   senti_classifier -p path_to/SentiWordNet_3.0.0_20100908.txt 
@@ -41,7 +43,7 @@ Shell Commands::
 
 Python Usage
 ------------
-Shell Commands::
+Shell Commands ::
 
   cd sentiment_classifier/src/senti_classifier/
   python senti_classifier.py -p path_to/SentiWordNet_3.0.0_20100908.txt
