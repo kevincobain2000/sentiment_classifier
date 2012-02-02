@@ -1,0 +1,5 @@
+*.*[#~]
+push.sh
+*.pyc
+*.p
+src/senti_classifier/_dicts
