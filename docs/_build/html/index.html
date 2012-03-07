@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sentiment Classification using WSD &mdash; sentiment_classifier 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="sentiment_classifier 0.4 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">sentiment_classifier 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sentiment-classification-using-wsd">
+<h1>Sentiment Classification using WSD<a class="headerlink" href="#sentiment-classification-using-wsd" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Home <a class="reference external" href="http://www.jaist.ac.jp/~s1010205/">http://www.jaist.ac.jp/~s1010205/</a></li>
+<li>Details <a class="reference external" href="http://www.jaist.ac.jp/~s1010205/code/index.html">http://www.jaist.ac.jp/~s1010205/code/index.html</a></li>
+</ul>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Sentiment Classifier using Word Sense Disambiguation using <tt class="docutils literal"><span class="pre">wordnet</span></tt> and word occurance
+statistics from movie review corpus <tt class="docutils literal"><span class="pre">nltk</span></tt>. Classifies into positive and negative categories.</p>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>You must have Python 2.6 with argparse <a class="reference external" href="http://pypi.python.org/pypi/argparse">http://pypi.python.org/pypi/argparse</a></li>
+<li>NLTK <a class="reference external" href="http://www.nltk.org">http://www.nltk.org</a>  2.0 installed.</li>
+<li>NumPy <a class="reference external" href="http://numpy.scipy.org">http://numpy.scipy.org</a></li>
+<li>SentiWordNet <a class="reference external" href="http://sentiwordnet.isti.cnr.it">http://sentiwordnet.isti.cnr.it</a></li>
+</ul>
+</div>
+<div class="section" id="how-to-install">
+<h2>How to Install<a class="headerlink" href="#how-to-install" title="Permalink to this headline">¶</a></h2>
+<p>Shell command</p>
+<div class="highlight-python"><pre>python setup.py install</pre>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://packages.python.org/sentiment_classifier/">http://packages.python.org/sentiment_classifier/</a></p>
+</div>
+</div>
+<div class="section" id="how-to-use">
+<h1>How to Use<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="script-usage">
+<h2>Script Usage<a class="headerlink" href="#script-usage" title="Permalink to this headline">¶</a></h2>
+<p>Shell Commands:</p>
+<div class="highlight-python"><pre>senti_classifier -p path_to/SentiWordNet_3.0.0_20100908.txt
+Success, Pickled Sentiwordnet to --&gt;  SentiWn.p
+senti_classifier -c reviews.txt</pre>
+</div>
+</div>
+<div class="section" id="python-usage">
+<h2>Python Usage<a class="headerlink" href="#python-usage" title="Permalink to this headline">¶</a></h2>
+<p>Shell Commands</p>
+<div class="highlight-python"><pre>cd sentiment_classifier/src/senti_classifier/
+python senti_classifier.py -p path_to/SentiWordNet_3.0.0_20100908.txt
+python senti_classifier.py -c reviews.txt</pre>
+</div>
+</div>
+</div>
+<div class="section" id="history">
+<h1>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">0.4</span></tt> Added Bag of Words as a Feature as occurance statistics</li>
+<li><tt class="docutils literal"><span class="pre">0.3</span></tt> Sentiment Classifier First app, Using WSD module</li>
+</ul>
+<div class="section" id="to-do">
+<h2>To-Do<a class="headerlink" href="#to-do" title="Permalink to this headline">¶</a></h2>
+<p>Classify using option <tt class="docutils literal"><span class="pre">neutral</span></tt> as custom heuristic.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sentiment Classification using WSD</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#how-to-install">How to Install</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-use">How to Use</a><ul>
+<li><a class="reference internal" href="#script-usage">Script Usage</a></li>
+<li><a class="reference internal" href="#python-usage">Python Usage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#history">History</a><ul>
+<li><a class="reference internal" href="#to-do">To-Do</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">sentiment_classifier 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Pulkit Kathuria.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
+    </div>
+  </body>
+</html>

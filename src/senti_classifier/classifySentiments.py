@@ -6,7 +6,7 @@ import cPickle as pickle
 from pkg_resources import resource_string
 from senti_classifier.bag_of_words import train_bag_of_words, classify_polarity
 from senti_classifier.fancy import color
-from senti_classifier.summarize import Summary
+from jNlp.summarize import Summary
 
 """
 Interface to SentiWordNet using the NLTK WordNet classes.
