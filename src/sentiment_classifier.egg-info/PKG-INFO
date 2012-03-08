@@ -28,19 +28,21 @@ Description: Sentiment Classification using WSD
         
         How to Install
         --------------
-        Shell command::
+        
+        Shell command ::
         
         python setup.py install
         
         Documentation
         -------------
-        http://packages.python.org/sentiment_classifier/
+        http://readthedocs.org/docs/sentiment_classifier/en/latest/
         
         
         How to Use
         ==========
         Script Usage
         ------------
+        
         Shell Commands::
         
         senti_classifier -p path_to/SentiWordNet_3.0.0_20100908.txt
@@ -49,7 +51,7 @@ Description: Sentiment Classification using WSD
         
         Python Usage
         ------------
-        Shell Commands::
+        Shell Commands ::
         
         cd sentiment_classifier/src/senti_classifier/
         python senti_classifier.py -p path_to/SentiWordNet_3.0.0_20100908.txt
