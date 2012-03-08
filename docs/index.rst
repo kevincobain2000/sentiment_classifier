@@ -4,7 +4,6 @@ Sentiment Classification using WSD
 ==================================
 
 - Home http://www.jaist.ac.jp/~s1010205/
-- Details http://www.jaist.ac.jp/~s1010205/code/index.html
 - **Download** http://pythonpackages.com/package/sentiment_classifier
 
 Overview
