@@ -28,11 +28,12 @@ Shell command ::
 
 Documentation
 -------------
-http://packages.python.org/sentiment_classifier/
+http://readthedocs.org/docs/sentiment_classifier/en/latest/
   
 
 How to Use
 ==========
+
 Script Usage
 ------------
 
