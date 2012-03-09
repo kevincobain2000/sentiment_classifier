@@ -63,3 +63,5 @@ To-Do
 -----
 
 Classify using option ``neutral`` as custom heuristic.
+
+.. include:: disqus_jnlp.html.rst
