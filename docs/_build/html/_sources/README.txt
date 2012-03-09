@@ -64,4 +64,5 @@ To-Do
 
 Classify using option ``neutral`` as custom heuristic.
 
+.. include:: run_time.rst
 .. include:: disqus_jnlp.html.rst
