@@ -13,7 +13,7 @@ setup(
     package_data = {'': ['data/*.txt'],
     },
     include_package_data = True,
-    url= 'http://www.jaist.ac.jp/~s1010205/code/index.html',
+    url= 'http://www.jaist.ac.jp/~s1010205/sentiment_classifier',
     license='LICENSE.txt',
     description='Sentiment Classification using Word Sense Disambiguation, Senti Word Net and word occurance statistics using movie review corpus',
     long_description=open('README').read(),

@@ -1,8 +1,10 @@
+`Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
+
 Sentiment Classification using WSD
 ==================================
 
 - Home http://www.jaist.ac.jp/~s1010205/
-- Details http://www.jaist.ac.jp/~s1010205/code/index.html
+- **Download** http://pythonpackages.com/package/sentiment_classifier
 
 Overview
 --------
@@ -32,6 +34,7 @@ http://readthedocs.org/docs/sentiment_classifier/en/latest/
 
 How to Use
 ==========
+
 Script Usage
 ------------
 
@@ -60,3 +63,6 @@ To-Do
 -----
 
 Classify using option ``neutral`` as custom heuristic.
+
+.. include:: run_time.rst
+.. include:: disqus_jnlp.html.rst

@@ -2,7 +2,7 @@ Metadata-Version: 1.0
 Name: sentiment-classifier
 Version: 0.4
 Summary: Sentiment Classification using Word Sense Disambiguation, Senti Word Net and word occurance statistics using movie review corpus
-Home-page: http://www.jaist.ac.jp/~s1010205/code/index.html
+Home-page: http://www.jaist.ac.jp/~s1010205/sentiment_classifier
 Author: KATHURIA Pulkit
 Author-email: pulkit@jaist.ac.jp
 License: LICENSE.txt
