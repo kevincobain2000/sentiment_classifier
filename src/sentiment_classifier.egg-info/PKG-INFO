@@ -6,11 +6,13 @@ Home-page: http://www.jaist.ac.jp/~s1010205/sentiment_classifier
 Author: KATHURIA Pulkit
 Author-email: pulkit@jaist.ac.jp
 License: LICENSE.txt
-Description: Sentiment Classification using WSD
+Description: `Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
+        
+        Sentiment Classification using WSD
         ==================================
         
         - Home http://www.jaist.ac.jp/~s1010205/
-        - Details http://www.jaist.ac.jp/~s1010205/code/index.html
+        - **Download** http://pythonpackages.com/package/sentiment_classifier
         
         Overview
         --------
@@ -40,6 +42,7 @@ Description: Sentiment Classification using WSD
         
         How to Use
         ==========
+        
         Script Usage
         ------------
         
@@ -68,6 +71,9 @@ Description: Sentiment Classification using WSD
         -----
         
         Classify using option ``neutral`` as custom heuristic.
+        
+        .. include:: run_time.rst
+        .. include:: disqus_jnlp.html.rst
         
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta
