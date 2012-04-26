@@ -1,4 +1,13 @@
-`Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
+.. raw:: html
+
+  <HEAD>
+    <LINK href="http://www.jaist.ac.jp/~s1010205/gh-buttons.css" rel="stylesheet" type="text/css">
+  </HEAD>
+
+.. raw:: html
+
+  <br><a href="http://www.jaist.ac.jp/~s1010205" class="button icon home">Back to Home</a>
+
 
 Sentiment Classification using WSD
 ==================================
