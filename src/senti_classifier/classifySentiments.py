@@ -6,7 +6,6 @@ import cPickle as pickle
 from pkg_resources import resource_string
 from senti_classifier.bag_of_words import train_bag_of_words, classify_polarity
 from senti_classifier.fancy import color
-from jNlp.summarize import Summary
 
 """
 Interface to SentiWordNet using the NLTK WordNet classes.
@@ -156,9 +155,6 @@ def classify(text, synsets_scores, bag_of_words):
                             sent_score_neg += synsets_scores[disamb_syn]['neg']
                         if bag_of_words['pos'].has_key(word.lower()):
                             sent_score_pos += synsets_scores[disamb_syn]['pos']
-            #print '{0:<50}{1:<6}{2:<10}{3:<10}{4:<10}{5:<10}'.format(sentence[:40],'...', 'positive=',sent_score_pos,'negative=',sent_score_neg)
-            #Following 2 are custom settings as per the SentiWordNet scores
-            #Change it as per domain adaptation
             pos += sent_score_pos
             neg += sent_score_neg
     return pos, neg

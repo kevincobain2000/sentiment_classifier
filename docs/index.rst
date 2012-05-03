@@ -13,7 +13,7 @@ Sentiment Classification using WSD
 ==================================
 
 - Home http://www.jaist.ac.jp/~s1010205/
-- **Download** http://pythonpackages.com/package/sentiment_classifier
+- Download http://pythonpackages.com/package/sentiment_classifier
 
 Overview
 --------
@@ -21,10 +21,31 @@ Overview
 Sentiment Classifier using Word Sense Disambiguation using ``wordnet`` and word occurance
 statistics from movie review corpus ``nltk``. Classifies into positive and negative categories.
 
+Online Demo
+-----------
+
+.. raw:: html
+
+   <script language="JavaScript"> 
+   <!-- 
+   function calcHeight() 
+   { //find the height of the internal page 
+   var the_height= document.getElementById('the_iframe').contentWindow. 
+   document.body.scrollHeight;  
+   //change the height of the iframe 
+   document.getElementById('the_iframe').height= 
+   the_height; 
+   } 
+   //--> 
+   </script>
+
+   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" height="2"></iframe>
+
+
 Requirements
 ------------
 
-- You must have Python 2.6 with argparse http://pypi.python.org/pypi/argparse
+- You must have Python 2.6.
 - NLTK http://www.nltk.org  2.0 installed. 
 - NumPy http://numpy.scipy.org
 - SentiWordNet http://sentiwordnet.isti.cnr.it

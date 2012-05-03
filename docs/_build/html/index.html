@@ -45,17 +45,33 @@
 <h1>Sentiment Classification using WSD<a class="headerlink" href="#sentiment-classification-using-wsd" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li>Home <a class="reference external" href="http://www.jaist.ac.jp/~s1010205/">http://www.jaist.ac.jp/~s1010205/</a></li>
-<li><strong>Download</strong> <a class="reference external" href="http://pythonpackages.com/package/sentiment_classifier">http://pythonpackages.com/package/sentiment_classifier</a></li>
+<li>Download <a class="reference external" href="http://pythonpackages.com/package/sentiment_classifier">http://pythonpackages.com/package/sentiment_classifier</a></li>
 </ul>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>Sentiment Classifier using Word Sense Disambiguation using <tt class="docutils literal"><span class="pre">wordnet</span></tt> and word occurance
 statistics from movie review corpus <tt class="docutils literal"><span class="pre">nltk</span></tt>. Classifies into positive and negative categories.</p>
 </div>
+<div class="section" id="online-demo">
+<h2>Online Demo<a class="headerlink" href="#online-demo" title="Permalink to this headline">¶</a></h2>
+<script language="JavaScript">
+<!--
+function calcHeight()
+{ //find the height of the internal page
+var the_height= document.getElementById('the_iframe').contentWindow.
+document.body.scrollHeight;
+//change the height of the iframe
+document.getElementById('the_iframe').height=
+the_height;
+}
+//-->
+</script>
+
+<iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" height="2"></iframe></div>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>You must have Python 2.6 with argparse <a class="reference external" href="http://pypi.python.org/pypi/argparse">http://pypi.python.org/pypi/argparse</a></li>
+<li>You must have Python 2.6.</li>
 <li>NLTK <a class="reference external" href="http://www.nltk.org">http://www.nltk.org</a>  2.0 installed.</li>
 <li>NumPy <a class="reference external" href="http://numpy.scipy.org">http://numpy.scipy.org</a></li>
 <li>SentiWordNet <a class="reference external" href="http://sentiwordnet.isti.cnr.it">http://sentiwordnet.isti.cnr.it</a></li>
@@ -185,6 +201,7 @@ reviews is POSITIVE with score 6.5</pre>
   <ul>
 <li><a class="reference internal" href="#">Sentiment Classification using WSD</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#online-demo">Online Demo</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 <li><a class="reference internal" href="#how-to-install">How to Install</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a></li>
