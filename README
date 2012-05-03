@@ -1,14 +1,3 @@
-.. raw:: html
-
-  <HEAD>
-    <LINK href="http://www.jaist.ac.jp/~s1010205/gh-buttons.css" rel="stylesheet" type="text/css">
-  </HEAD>
-
-.. raw:: html
-
-  <br><a href="http://www.jaist.ac.jp/~s1010205" class="button icon home">Back to Home</a>
-
-
 Sentiment Classification using WSD
 ==================================
 
@@ -24,22 +13,7 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
 Online Demo
 -----------
 
-.. raw:: html
-
-   <script language="JavaScript"> 
-   <!-- 
-   function calcHeight() 
-   { //find the height of the internal page 
-   var the_height= document.getElementById('the_iframe').contentWindow. 
-   document.body.scrollHeight;  
-   //change the height of the iframe 
-   document.getElementById('the_iframe').height= 
-   the_height; 
-   } 
-   //--> 
-   </script>
-
-   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" height="2"></iframe>
+http://www.jaist.ac.jp/~s1010205/sentiment_classifier/
 
 
 Requirements
@@ -59,6 +33,7 @@ Shell command ::
 
 Documentation
 -------------
+
 http://readthedocs.org/docs/sentiment_classifier/en/latest/
   
 
@@ -89,10 +64,3 @@ History
 - ``0.4`` Added Bag of Words as a Feature as occurance statistics
 - ``0.3`` Sentiment Classifier First app, Using WSD module
 
-To-Do
------
-
-Classify using option ``neutral`` as custom heuristic.
-
-.. include:: run_time.rst
-.. include:: disqus_jnlp.html.rst

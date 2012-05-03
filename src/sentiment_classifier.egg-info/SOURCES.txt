@@ -12,4 +12,5 @@ src/senti_classifier/data/sample_review.txt
 src/sentiment_classifier.egg-info/PKG-INFO
 src/sentiment_classifier.egg-info/SOURCES.txt
 src/sentiment_classifier.egg-info/dependency_links.txt
+src/sentiment_classifier.egg-info/requires.txt
 src/sentiment_classifier.egg-info/top_level.txt

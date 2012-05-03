@@ -6,13 +6,11 @@ Home-page: http://www.jaist.ac.jp/~s1010205/sentiment_classifier
 Author: KATHURIA Pulkit
 Author-email: pulkit@jaist.ac.jp
 License: LICENSE.txt
-Description: `Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
-        
-        Sentiment Classification using WSD
+Description: Sentiment Classification using WSD
         ==================================
         
         - Home http://www.jaist.ac.jp/~s1010205/
-        - **Download** http://pythonpackages.com/package/sentiment_classifier
+        - Download http://pythonpackages.com/package/sentiment_classifier
         
         Overview
         --------
@@ -20,10 +18,16 @@ Description: `Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
         Sentiment Classifier using Word Sense Disambiguation using ``wordnet`` and word occurance
         statistics from movie review corpus ``nltk``. Classifies into positive and negative categories.
         
+        Online Demo
+        -----------
+        
+        http://www.jaist.ac.jp/~s1010205/sentiment_classifier/
+        
+        
         Requirements
         ------------
         
-        - You must have Python 2.6 with argparse http://pypi.python.org/pypi/argparse
+        - You must have Python 2.6.
         - NLTK http://www.nltk.org  2.0 installed.
         - NumPy http://numpy.scipy.org
         - SentiWordNet http://sentiwordnet.isti.cnr.it
@@ -37,6 +41,7 @@ Description: `Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
         
         Documentation
         -------------
+        
         http://readthedocs.org/docs/sentiment_classifier/en/latest/
         
         
@@ -67,13 +72,6 @@ Description: `Back To Home <http://www.jaist.ac.jp/~s1010205/>`_
         - ``0.4`` Added Bag of Words as a Feature as occurance statistics
         - ``0.3`` Sentiment Classifier First app, Using WSD module
         
-        To-Do
-        -----
-        
-        Classify using option ``neutral`` as custom heuristic.
-        
-        .. include:: run_time.rst
-        .. include:: disqus_jnlp.html.rst
         
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta

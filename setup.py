@@ -17,6 +17,7 @@ setup(
     license='LICENSE.txt',
     description='Sentiment Classification using Word Sense Disambiguation, Senti Word Net and word occurance statistics using movie review corpus',
     long_description=open('README').read(),
+    install_requires = ['nltk','numpy','argparse'],
     classifiers=['Development Status :: 4 - Beta','Natural Language :: English',
                  'Topic :: Scientific/Engineering :: Artificial Intelligence'],
     
