@@ -26,7 +26,7 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
 
 .. raw:: html
 
-  <br><a href="http://www.jaist.ac.jp/~s1010205/sentiment_classifier/sentiment_classifier-0.5.tar.gz" class="button icon fork">sentiment_classifier-0.5.tar.gz</a>
+  <br><a href="http://www.jaist.ac.jp/~s1010205/sentiment_classifier/sentiment_classifier-0.5.tar.gz" class="button icon arrowdown">sentiment_classifier-0.5.tar.gz</a>
 
 
 Online Demo
