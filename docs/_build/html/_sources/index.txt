@@ -18,16 +18,16 @@ Sentiment Classification using WSD
 - `Github <https://github.com/kevincobain2000/sentiment_classifier>`_
 - `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/>`_
 
-.. raw:: html
-
-  <br><a href="http://www.jaist.ac.jp/~s1010205/sentiment_classifier/sentiment_classifier-0.5.tar.gz" class="button icon fork">sentiment_classifier-0.5.tar.gz</a>
-
-
 Overview
 --------
 
 Sentiment Classifier using Word Sense Disambiguation using ``wordnet`` and word occurance
 statistics from movie review corpus ``nltk``. Classifies into positive and negative categories.
+
+.. raw:: html
+
+  <br><a href="http://www.jaist.ac.jp/~s1010205/sentiment_classifier/sentiment_classifier-0.5.tar.gz" class="button icon fork">sentiment_classifier-0.5.tar.gz</a>
+
 
 Online Demo
 -----------
