@@ -1,16 +1,15 @@
 import os
 from setuptools import setup, find_packages
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
 setup(
     name = 'sentiment_classifier', 
-    version='0.4',
+    version='0.5',
     author='KATHURIA Pulkit',
     author_email='pulkit@jaist.ac.jp',
     packages= find_packages('src'), 
     scripts = ['scripts/senti_classifier'],
     package_dir = {'':'src'},
-    package_data = {'': ['data/*.txt'],
+    package_data = {'': ['data/*.txt','data/*.p'],
     },
     include_package_data = True,
     url= 'http://www.jaist.ac.jp/~s1010205/sentiment_classifier',
@@ -34,9 +33,9 @@ sentiment_classifier/
       senti_classifier
     src/
       senti_classifier/
-          __init__.py
-          senti_classifier.py
+          classify.py
           bag_of_words.py
           data/
               sample_review.txt
+              pickled_trained_data.p
 """

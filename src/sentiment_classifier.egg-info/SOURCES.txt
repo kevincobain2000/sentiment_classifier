@@ -3,11 +3,11 @@ README
 setup.py
 scripts/senti_classifier
 src/senti_classifier/__init__.py
-src/senti_classifier/bag_of_words.py
-src/senti_classifier/bag_of_words.pyc
-src/senti_classifier/classifySentiments.py
-src/senti_classifier/fancy.py
-src/senti_classifier/fancy.pyc
+src/senti_classifier/senti_classifier.py
+src/senti_classifier/senti_classifier.pyc
+src/senti_classifier/data/SentiWn.p
+src/senti_classifier/data/__init__.py
+src/senti_classifier/data/bag_of_words.p
 src/senti_classifier/data/sample_review.txt
 src/sentiment_classifier.egg-info/PKG-INFO
 src/sentiment_classifier.egg-info/SOURCES.txt

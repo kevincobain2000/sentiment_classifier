@@ -1,8 +1,8 @@
 graft src/
 prune src/senti_classifier/.git/
 exclude push.sh
-exclude src/senti_classifier/*.p
 prune src/senti_classifier/_dicts
+
 
 
 
