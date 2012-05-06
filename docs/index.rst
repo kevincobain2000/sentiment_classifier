@@ -14,7 +14,7 @@ Sentiment Classification using WSD
 
 - ``pip install sentiment_classifier``
 - `Home <http://www.jaist.ac.jp/~s1010205/>`_
-- `Download <https://github.com/downloads/kevincobain2000/sentiment_classifier/sentiment_classifier-0.5.tar.gz>`_
+- `pypi package <http://pythonpackages.com/package/sentiment_classifier>`_
 - `Github <https://github.com/kevincobain2000/sentiment_classifier>`_
 - `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/>`_
 
