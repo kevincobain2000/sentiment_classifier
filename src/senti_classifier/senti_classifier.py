@@ -207,6 +207,7 @@ def polarity_scores(lines_list):
 
 if __name__ == "__main__":
     #print polarity_scores(['Excellent','Worst'])
+    #print synsets_scores['peaceful.a.01']['pos']
     parser = argparse.ArgumentParser(add_help = True)
     parser = argparse.ArgumentParser(description= 'Sentiment classification')
     parser.add_argument('-c','--classify', action="store", nargs = '*', dest="files", type=argparse.FileType('rt'), help='-c reviews')
