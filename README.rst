@@ -100,11 +100,14 @@ Library Usage
     pos_score, neg_score = senti_classifier.polarity_scores(sentences)
     print pos_score, neg_score
 
+    ... 0.0 1.75
+
 .. code-block:: python
 
-  >>> from senti_classifier.senti_classifier import synsets_scores
-  >>> print synsets_scores['peaceful.a.01']['pos']
-  0.25
+  from senti_classifier.senti_classifier import synsets_scores
+  print synsets_scores['peaceful.a.01']['pos']
+  
+  ... 0.25
 
 
 History
