@@ -15,7 +15,7 @@
  
 body {
     font-family: 'Georgia', serif;
-    font-size: 17px;
+    font-size: 14px;
     background-color: white;
     color: #000;
     margin: 0;
@@ -100,7 +100,7 @@ div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
     font-family: 'Garamond', 'Georgia', serif;
     color: #444;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     margin: 0 0 5px 0;
     padding: 0;
@@ -204,7 +204,7 @@ dd div.admonition {
 div.admonition p.admonition-title {
     font-family: 'Garamond', 'Georgia', serif;
     font-weight: normal;
-    font-size: 24px;
+    font-size:22px;
     margin: 0 0 10px 0;
     padding: 0;
     line-height: 1;
