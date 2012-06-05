@@ -47,7 +47,7 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
    //--> 
    </script>
 
-   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" height="2"></iframe>
+   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" height=100%></iframe>
 
 
 Requirements
