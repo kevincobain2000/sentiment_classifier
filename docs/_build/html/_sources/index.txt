@@ -7,12 +7,14 @@
 .. raw:: html
 
   <br><a href="http://www.jaist.ac.jp/~s1010205" class="button icon home">Back to Home</a>
+  <p><iframe src="http://www.jaist.ac.jp/~s1010205/github-btn.html?user=kevincobain2000&repo=sentiment_classifier&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="165px" height="30px"></iframe></p>
+  
 
 
 Sentiment Classification using WSD
 ==================================
 
-- ``pip install sentiment_classifier``
+- pip install sentiment_classifier
 - `Home <http://www.jaist.ac.jp/~s1010205/>`_
 - `pypi package <http://pythonpackages.com/package/sentiment_classifier>`_
 - `Github <https://github.com/kevincobain2000/sentiment_classifier>`_
@@ -27,6 +29,9 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
 .. raw:: html
 
   <br><a href="https://github.com/downloads/kevincobain2000/sentiment_classifier/sentiment_classifier-0.5.tar.gz" class="button icon arrowdown">sentiment_classifier-0.5.tar.gz</a>
+  <br><iframe src="http://www.jaist.ac.jp/~s1010205/cgi-bin/pypi-git-stats/stats.cgi?pypi=sentiment_classifier&gituser=kevincobain2000&repo=sentiment_classifier" allowtransparency="true" frameborder="0" scrolling="0" width="180px" height="45px"></iframe>
+
+`Download Stats Provided by` `pypi-github-stats <http://www.jaist.ac.jp/~s1010205/pypi-git-stats/>`_
 
 
 `Online Demo <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/#online-demo/>`_
@@ -47,7 +52,7 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
    //--> 
    </script>
 
-   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" height=100%></iframe>
+   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" ></iframe>
 
 
 Requirements
