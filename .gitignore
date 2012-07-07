@@ -5,5 +5,4 @@ push.sh
 src/senti_classifier/_dicts
 build/
 dist/
-src/senti_classifier/data/neg*
-src/senti_classifier/data/pos*
+
