@@ -123,4 +123,10 @@ Library Usage
 History
 =======
 
-- ``0.5`` No additional data requir
+- ``0.5`` No additional data required trained data is loaded automatically. Much faster/Optimized than previous versions.
+- ``0.4`` Added Bag of Words as a Feature as occurance statistics
+- ``0.3`` Sentiment Classifier First app, Using WSD module
+
+
+.. include:: run_time.rst
+.. include:: disqus_jnlp.html.rst
