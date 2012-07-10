@@ -11,8 +11,8 @@
   
 
 
-Sentiment Classification using WSD
-==================================
+Sentiment Classification using WSD, Maximum Entropy & Naive Bayes Classifiers
+=============================================================================
 
 - pip install sentiment_classifier
 - `Home <http://www.jaist.ac.jp/~s1010205/>`_
@@ -24,7 +24,9 @@ Overview
 --------
 
 Sentiment Classifier using Word Sense Disambiguation using ``wordnet`` and word occurance
-statistics from movie review corpus ``nltk``. Classifies into positive and negative categories.
+statistics from movie review corpus ``nltk``. For twitter sentiment analysis bigrams are used as 
+features on Naive Bayes and Maximum Entropy Classifier from the twitter data. Classifies into positive and negative labels.
+Next is use senses instead of tokens from the respective data.
 
 .. raw:: html
 
@@ -32,7 +34,6 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
   <br><iframe src="http://www.jaist.ac.jp/~s1010205/cgi-bin/pypi-git-stats/stats.cgi?pypi=sentiment_classifier&gituser=kevincobain2000&repo=sentiment_classifier" allowtransparency="true" frameborder="0" scrolling="0" width="180px" height="45px"></iframe>
 
 `Download Stats Provided by` `pypi-github-stats <http://www.jaist.ac.jp/~s1010205/pypi-git-stats/>`_
-
 
 `Online Demo <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/#online-demo/>`_
 ------------------------------------------------------------------------------------
