@@ -54,6 +54,10 @@ statistics from movie review corpus ``nltk``. Classifies into positive and negat
 
    <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" ></iframe>
 
+Sentiment Classifiers and Data
+------------------------------
+
+   The above online demo uses movie review corpus from nltk, twitter and Amazon,on which Naive Bayes classifier is trained. Classifier using WSD SentiWordNet is based on heuristics and uses WordNet and SentiWordNet. Test results on sentiment analysis on twitter and amazon customer reviews data & features used for NaiveBayes will be `Github <https://github.com/kevincobain2000/sentiment_classifier>`_.
 
 Requirements
 ------------
