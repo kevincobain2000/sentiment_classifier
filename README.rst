@@ -9,6 +9,11 @@
   <br><a href="http://www.jaist.ac.jp/~s1010205" class="button icon home">Back to Home</a>
   <p><iframe src="http://www.jaist.ac.jp/~s1010205/github-btn.html?user=kevincobain2000&repo=sentiment_classifier&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="165px" height="30px"></iframe></p>
   
+iPhone App for Twitter Sentiments is Out
+----------------------------------------
+
+https://itunes.apple.com/us/app/emotion-calculator-for-twitter/id591404584?ls=1&mt=8
+
 
 
 Sentiment Classification using WSD, Maximum Entropy & Naive Bayes Classifiers
