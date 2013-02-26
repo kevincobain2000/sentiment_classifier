@@ -1,0 +1,49 @@
+<HEAD>
+    <LINK href="http://www.jaist.ac.jp/~s1010205/gh-buttons.css" rel="stylesheet" type="text/css">
+</HEAD>
+<HTML>
+<HEAD>
+ <TITLE>Sentiment Classifier</TITLE>
+</HEAD>
+<script>
+function onBlur(el) {
+    if (el.value == '') {
+        el.value = el.defaultValue;
+    }
+}
+function onFocus(el) {
+    if (el.value == el.defaultValue) {
+        el.value = '';
+    }
+}
+</script>
+ <form action="sentiment_classifier.cgi" method="post">
+   <textarea name="textcontent" onblur="onBlur(this)" onfocus="onFocus(this)" "TEXT" STYLE="width:330; height:150; background-color:white"/>It was one of the bad movies, I have seen. Unbelievable acting by actors and poor direction.</textarea> 
+  <br>
+   <select name="dropdown">
+     <optgroup label="General">
+       <option value="movies">Movies</option>
+     </optgroup>
+     <optgroup label="Social">
+       <option value="tweets">Tweets</option>
+     <optgroup label="Product-Reviews">
+       <option value="amazon">Amazon</option>
+     </optgroup>
+   </select>
+
+   <select name="classifier">
+     <optgroup label="Probability">
+       <option value="MaxentClassifier">MaxentClassifier</option>
+       <option value="NaiveBayes">NaiveBayes</option>
+     </optgroup>
+     <optgroup label="Heuristic">
+       <option value="WSD-SentiWordNet">WSD-SentiWordNet</option>
+     </optgroup>
+     <optgroup label="All Above">
+       <option value="NaiveBayes MaxentClassifier WSD-SentiWordNet">All-Classifiers</option>
+     </optgroup>
+   </select>
+ 
+   <input type="submit" value="Classify Sentiments" class="button primary"/>
+ </form>
+</HTML>
