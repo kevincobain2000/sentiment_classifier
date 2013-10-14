@@ -14,6 +14,8 @@ iPhone App for Twitter Sentiments is Out
 
 https://itunes.apple.com/us/app/emotion-calculator-for-twitter/id591404584?ls=1&mt=8
 
+App no longer available
+
 
 
 Sentiment Classification using WSD, Maximum Entropy & Naive Bayes Classifiers
@@ -40,7 +42,7 @@ Next is use senses instead of tokens from the respective data.
 
 `Download Stats Provided by` `pypi-github-stats <http://www.jaist.ac.jp/~s1010205/pypi-git-stats/>`_
 
-`Online Demo <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/#online-demo/>`_
+`Online Demo <http://www8355ue.sakura.ne.jp/?action_classifiers_sentiment=true/>`_
 ------------------------------------------------------------------------------------
 
 .. raw:: html
