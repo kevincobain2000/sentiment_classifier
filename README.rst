@@ -25,7 +25,6 @@ Sentiment Classification using WSD, Maximum Entropy & Naive Bayes Classifiers
 - `Home <http://www.jaist.ac.jp/~s1010205/>`_
 - `pypi package <http://pythonpackages.com/package/sentiment_classifier>`_
 - `Github <https://github.com/kevincobain2000/sentiment_classifier>`_
-- `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/#online-demo/>`_
 
 Overview
 --------
@@ -41,26 +40,6 @@ Next is use senses instead of tokens from the respective data.
   <br><iframe src="http://www.jaist.ac.jp/~s1010205/cgi-bin/pypi-git-stats/stats.cgi?pypi=sentiment_classifier&gituser=kevincobain2000&repo=sentiment_classifier" allowtransparency="true" frameborder="0" scrolling="0" width="180px" height="45px"></iframe>
 
 `Download Stats Provided by` `pypi-github-stats <http://www.jaist.ac.jp/~s1010205/pypi-git-stats/>`_
-
-`Online Demo <http://www8355ue.sakura.ne.jp/?action_classifiers_sentiment=true/>`_
-------------------------------------------------------------------------------------
-
-.. raw:: html
-
-   <script language="JavaScript"> 
-   <!-- 
-   function calcHeight() 
-   { //find the height of the internal page 
-   var the_height= document.getElementById('the_iframe').contentWindow. 
-   document.body.scrollHeight;  
-   //change the height of the iframe 
-   document.getElementById('the_iframe').height= 
-   the_height; 
-   } 
-   //--> 
-   </script>
-
-   <iframe width="100%" id="the_iframe" onLoad="calcHeight();" src="http://www.jaist.ac.jp/~s1010205/cgi-bin/senti_classifier/sentiment_classifier.cgi" scrolling="NO" frameborder="0" ></iframe>
 
 Sentiment Classifiers and Data
 ------------------------------
