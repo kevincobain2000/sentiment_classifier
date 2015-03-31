@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: sentiment-classifier
-Version: 0.5
+Version: 0.6
 Summary: Sentiment Classification using Word Sense Disambiguation, Senti Word Net and word occurance statistics using movie review corpus
 Home-page: http://www.jaist.ac.jp/~s1010205/sentiment_classifier
 Author: KATHURIA Pulkit
@@ -90,6 +90,7 @@ Description: Sentiment Classification using WSD
         History
         =======
         
+        - ``0.6`` Bug Fixed upon nltk upgrade
         - ``0.5`` No additional data required trained data is loaded automatically. Much faster/Optimized than previous versions.
         - ``0.4`` Added Bag of Words as a Feature as occurance statistics
         - ``0.3`` Sentiment Classifier First app, Using WSD module
