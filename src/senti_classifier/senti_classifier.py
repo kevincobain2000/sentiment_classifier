@@ -194,11 +194,14 @@ def classify(text, synsets_scores, bag_of_words):
             neg += sent_score_neg
     return pos, neg
 
-senti_pickle = resource_stream('senti_classifier', 'data/SentiWn.p')
-bag_of_words_pickle = resource_stream('senti_classifier', 'data/bag_of_words.p')
-synsets_scores = pickle.load(senti_pickle)
-bag_of_words = pickle.load(bag_of_words_pickle)
-bag_of_words = classify_polarity(bag_of_words)
+
+#==========  Skipping pickle for a while  ==========*/
+
+# senti_pickle = resource_stream('senti_classifier', 'data/SentiWn.p')
+# bag_of_words_pickle = resource_stream('senti_classifier', 'data/bag_of_words.p')
+# synsets_scores = pickle.load(senti_pickle)
+# bag_of_words = pickle.load(bag_of_words_pickle)
+# bag_of_words = classify_polarity(bag_of_words)
 
 def polarity_scores(lines_list):
     scorer = defaultdict(list)
@@ -206,37 +209,53 @@ def polarity_scores(lines_list):
     return pos, neg
 
 if __name__ == "__main__":
-    #print polarity_scores(['Excellent','Worst'])
-    #print synsets_scores['peaceful.a.01']['pos']
+    pickles = ['SentiWn.p']
     parser = argparse.ArgumentParser(add_help = True)
     parser = argparse.ArgumentParser(description= 'Sentiment classification')
+    parser.add_argument('-p','--pickle', action="store", dest="SentiWN_path", type=str, help='SentiWordNet_*.txt')
     parser.add_argument('-c','--classify', action="store", nargs = '*', dest="files", type=argparse.FileType('rt'), help='-c reviews')
     myarguments = parser.parse_args()
-    if not myarguments.files:
-        parser.print_help()
-        exit("Documentation: %s"%__documentation__)
-    for file in myarguments.files:
-        tpos = 0
-        tneg = 0
-        for lineno, line in enumerate(file.readlines()):
-            line = line.strip()
-            if len(line) == 0: continue
-            r = re.compile("[,.?()\\d]+ *")
-            lines_list = r.split(line)
-            pos, neg = polarity_scores(lines_list)
-            print '{0:<40}... pos = {1:<5} \tneg = {2:<5}'.format(str(lineno)+'. ' + line[:20],pos,neg)
-            tpos += pos
-            tneg += neg
-        print '-'*75
-        if tpos > tneg:
-            positive = file.name + ' ' + 'is Positive'
-            print '{0:<40}... pos = {1:<5} \tneg = {2:<5}'.format(positive, tpos, tneg)
-        else:
-            negative = file.name + ' ' + 'is Negative'
-            print '{0:<40}... pos = {1:<5} \tneg = {2:<5}'.format(negative, tpos, tneg)
-        print  'Overall score of document\nTotal Pos = %s\nTotal Neg = %s'%(tpos, tneg)
-        print '-'*75
-            
-            
-        
+    synsets_scores = SentiWordNet_to_pickle(SentiWordNetCorpusReader(myarguments.SentiWN_path))
 
+    # Fix me: TypeError: can't pickle instancemethod objects
+    # Not able to dump the pickle somehow. http://stackoverflow.com/questions/16439301/cant-pickle-defaultdict
+    # pickle.dump(synsets_scores, open(pickles[0],'wb'))
+    # 
+    # Temporary Fix, just don't pickle them (it takes long time ! its better to pickle)
+    
+    bag_of_words = train_bag_of_words()
+    bag_of_words = classify_polarity(bag_of_words)
+    print classify( ["The movie was the worst movie"], synsets_scores, bag_of_words)
+
+    #=====================================
+    #            Obsolete Code           =
+    #====================================*/
+
+    # pickle.dump(synsets_scores, open(pickles[0],'wb'))
+    # if myarguments.SentiWN_path or not os.path.exists(pickles[0]):
+    #     if not myarguments.SentiWN_path:
+    #         print '1) python setup.py install'
+    #         print '2) classifySentiments --pickle SentiWordNet_3.0.0_20100908.txt'
+    #         exit()
+    #     synsets_scores = SentiWordNet_to_pickle(SentiWordNetCorpusReader(myarguments.SentiWN_path))
+        # pickle.dump(synsets_scores, open(pickles[0],'wb'))
+    # if os.path.exists(pickles[0]) and myarguments.files:
+    #     synsets_scores = pickle.load(open(pickles[0],'rb'))
+    #     bag_of_words = train_bag_of_words()
+    #     bag_of_words = classify_polarity(bag_of_words)
+    #     scorer = defaultdict(list)
+    #     for file in myarguments.files:
+    #         pos, neg = classify(file.readlines(), synsets_scores, bag_of_words)
+    #         if not scorer.has_key(file.name): scorer[file.name] = defaultdict(float)
+    #         scorer[file.name]['positive'] = pos
+    #         scorer[file.name]['negative'] = neg
+    #         file.close()
+    #     for key in scorer.keys():
+    #         total_pos = scorer[key].items()[0][1]
+    #         total_neg = scorer[key].items()[1][1]
+    #         sentiment, score = max(scorer[key].iteritems(), key=operator.itemgetter(1))
+    #         #print '{0:<50}{1:<6}{2:<10}{3:<10}{4:<10}{5:<10}'.format(' ','TOTAL','POSITIVE=',total_pos,'NEGATIVE=',total_neg)
+    #         if sentiment == 'negative': print key,'=', sentiment.upper(), 'score =' ,score
+    #         else: print key,'=', sentiment.upper(),'score =' ,score
+    #     #if len(scorer.keys()) > 1:
+    #         #for key in scorer.keys():
