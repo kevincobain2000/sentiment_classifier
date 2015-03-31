@@ -3,6 +3,7 @@ README
 setup.py
 scripts/senti_classifier
 src/senti_classifier/__init__.py
+src/senti_classifier/classifiers.py
 src/senti_classifier/senti_classifier.py
 src/senti_classifier/senti_classifier.pyc
 src/senti_classifier/data/SentiWn.p
