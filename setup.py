@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'sentiment_classifier', 
-    version='0.5',
+    version='0.6',
     author='KATHURIA Pulkit',
     author_email='pulkit@jaist.ac.jp',
     packages= find_packages('src'), 
