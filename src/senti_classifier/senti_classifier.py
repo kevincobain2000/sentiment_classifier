@@ -184,7 +184,7 @@ def classify(text, synsets_scores, bag_of_words):
             sent_score_pos = sent_score_neg = 0
             for word in sentence.split():
                 if disambiguateWordSenses(sentence, word): 
-                    disamb_syn = disambiguateWordSenses(sentence, word).name
+                    disamb_syn = disambiguateWordSenses(sentence, word).name()
                     if synsets_scores.has_key(disamb_syn):
                         #uncomment the disamb_syn.split... if also want to check synsets polarity
                         if bag_of_words['neg'].has_key(word.lower()):
@@ -198,11 +198,11 @@ def classify(text, synsets_scores, bag_of_words):
 
 #==========  Skipping pickle for a while  ==========*/
 
-# senti_pickle = resource_stream('senti_classifier', 'data/SentiWn.p')
-# bag_of_words_pickle = resource_stream('senti_classifier', 'data/bag_of_words.p')
-# synsets_scores = pickle.load(senti_pickle)
-# bag_of_words = pickle.load(bag_of_words_pickle)
-# bag_of_words = classify_polarity(bag_of_words)
+senti_pickle = resource_stream('senti_classifier', 'data/SentiWn.p')
+bag_of_words_pickle = resource_stream('senti_classifier', 'data/bag_of_words.p')
+synsets_scores = pickle.load(senti_pickle)
+bag_of_words = pickle.load(bag_of_words_pickle)
+bag_of_words = classify_polarity(bag_of_words)
 
 def polarity_scores(lines_list):
     scorer = defaultdict(list)
@@ -211,12 +211,19 @@ def polarity_scores(lines_list):
 
 if __name__ == "__main__":
     pickles = ['SentiWn.p']
-    parser = argparse.ArgumentParser(add_help = True)
-    parser = argparse.ArgumentParser(description= 'Sentiment classification')
-    parser.add_argument('-p','--pickle', action="store", dest="SentiWN_path", type=str, help='SentiWordNet_*.txt')
-    parser.add_argument('-c','--classify', action="store", nargs = '*', dest="files", type=argparse.FileType('rt'), help='-c reviews')
-    myarguments = parser.parse_args()
-    synsets_scores = SentiWordNet_to_pickle(SentiWordNetCorpusReader(myarguments.SentiWN_path))
+    print classify( ["The movie was the worst movie bad super worst"], synsets_scores, bag_of_words)
+
+    #=====================================
+    #            Debug Code           =
+    #====================================*/
+
+    # parser = argparse.ArgumentParser(add_help = True)
+    # parser = argparse.ArgumentParser(description= 'Sentiment classification')
+    # parser.add_argument('-p','--pickle', action="store", dest="SentiWN_path", type=str, help='SentiWordNet_*.txt')
+    # parser.add_argument('-c','--classify', action="store", nargs = '*', dest="files", type=argparse.FileType('rt'), help='-c reviews')
+    # myarguments = parser.parse_args()
+    # synsets_scores = SentiWordNet_to_pickle(SentiWordNetCorpusReader(myarguments.SentiWN_path))
+    # pickle.dump(synsets_scores, open(pickles[0],'wb'))
 
     # Fix me: TypeError: can't pickle instancemethod objects
     # Not able to dump the pickle somehow. http://stackoverflow.com/questions/16439301/cant-pickle-defaultdict
@@ -224,13 +231,12 @@ if __name__ == "__main__":
     # 
     # Temporary Fix, just don't pickle them (it takes long time ! its better to pickle)
     
-    bag_of_words = train_bag_of_words()
-    bag_of_words = classify_polarity(bag_of_words)
-    print classify( ["The movie was the worst movie"], synsets_scores, bag_of_words)
+    # bag_of_words = train_bag_of_words()
+    # bag_of_words = classify_polarity(bag_of_words)
 
-    #=====================================
-    #            Obsolete Code           =
-    #====================================*/
+    
+
+
 
     # pickle.dump(synsets_scores, open(pickles[0],'wb'))
     # if myarguments.SentiWN_path or not os.path.exists(pickles[0]):
