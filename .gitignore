@@ -5,5 +5,3 @@ push.sh
 src/senti_classifier/_dicts
 build/
 dist/
-
-
