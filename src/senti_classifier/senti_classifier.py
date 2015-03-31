@@ -17,6 +17,7 @@ Sentiment Classifier & WSD Module
 
 --Pulkit Kathuria
 """
+__note__ = "Don not follow the following links I am not a JAIST STUDENT anymore"
 __documentation__ = "http://www.jaist.ac.jp/~s1010205/sentiment_classifier"
 __url__ = "http://www.jaist.ac.jp/~s1010205/"
 __online_demo__ = "http://www.jaist.ac.jp/~s1010205/sentiment_classifier"
