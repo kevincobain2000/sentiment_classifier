@@ -68,8 +68,6 @@ Documentation
 -------------
 
 - http://readthedocs.org/docs/sentiment_classifier/en/latest/
-- `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/>`_
-  
 
 Script Usage
 ------------
@@ -109,6 +107,7 @@ Library Usage
 History
 =======
 
+- ``0.6`` Bug Fixed upon nltk upgrade
 - ``0.5`` No additional data required trained data is loaded automatically. Much faster/Optimized than previous versions.
 - ``0.4`` Added Bag of Words as a Feature as occurance statistics
 - ``0.3`` Sentiment Classifier First app, Using WSD module
