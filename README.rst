@@ -67,7 +67,7 @@ Shell command ::
 Documentation
 -------------
 
-- http://readthedocs.org/docs/sentiment_classifier/en/latest/
+- http://pythonhosted.org/sentiment_classifier/
 
 Script Usage
 ------------
