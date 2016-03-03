@@ -41,8 +41,7 @@ Shell command ::
 Documentation
 -------------
 
-- http://readthedocs.org/docs/sentiment_classifier/en/latest/
-- `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/>`_
+- http://pythonhosted.org/sentiment_classifier/
   
 
 Script Usage
