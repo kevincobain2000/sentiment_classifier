@@ -1,0 +1,64 @@
+{
+    "reviews": [
+    {
+        "text": "This is a mediocre horror/comedy that deserves neither high praise nor disparagement.",
+        "neg": 1.153,
+        "pos": 0.875
+    },
+
+    {
+        "text": "On the one hand, Transformers: Age of Extinction is barely coherent, narratively disastrous, and oppressively long. On the other: Optimus Prime riding a dinosaur robot!",
+        "neg": 0.125,
+        "pos": 0.375
+    },
+
+    {
+        "text": "The elements of a Transformer movie: cool machinery, a long-legged jail-bait female of stunning visage, cornfields/sunsets; witty dialog: 'Dude, she's an evil jock-concubine.'",
+        "neg": 0.875,
+        "pos": 0.5
+    },
+
+    {
+        "text": "These women are having fun just being together and getting to don matching jumpsuits and whale on undead spirits, and their evident joy makes us happy to hop in the hearse for a ride-along.",
+        "neg": 0.0,
+        "pos": 1.625
+    },
+
+    {
+        "text": "Sure, it's shallow, but it's also slickly compelling, beautifully crafted and so damn shiny.",
+        "neg": 0.0,
+        "pos": 0.375
+    },
+
+    {
+        "text": "Horns appears to be of the persuasion that everybody is a liar and inherently evil, and it's a disappointingly one-note approach to a premise that could use a lighter touch.",
+        "neg": 0.25,
+        "pos": 0.375
+    },
+    {
+        "text": "A gritty urban comedy noir, a scathing, Network-worthy disembowelment of television newsgatherers that will leave you craving a shower.",
+        "neg": 0.25,
+        "pos": 0.5
+    },
+    {
+        "text": "Birdman or (The Unexpected Virtue of Ignorance) is the sort of movie that ends up on a person's favourite-movies-of-all-time list. It's really that fresh.",
+        "neg": 0.125,
+        "pos": 0.5
+    },
+    {
+        "text": "Birdman takes advantage of every facet of Keaton's talent, from his knack for absurdist comedy to his seemingly effortless ability to tap into graceful profundity without making a big show of it.",
+        "neg": 0.125,
+        "pos": 1.875
+    },
+    {
+        "text": "This is the kind of movie that gas-bag instructors use to illustrate the concept that one man's reality is another's fiction. But it's puny stuff compared to Kurosawa's Rashomon.",
+        "neg": 1.0,
+        "pos": 1.0
+    },
+    {
+        "text": "terrific movie, about one man's quest for vengeance, does everything a thriller is supposed to do: intrigue, involve and keep you guessing.",
+        "neg": 0.5,
+        "pos": 0.25
+    }
+]
+}
