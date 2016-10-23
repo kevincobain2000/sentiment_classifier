@@ -48,7 +48,7 @@ Requirements
 
 In ``Version 0.5`` all the following requirements are installed automatically. In case of troubles install those manually.
 
-- You must have Python 2.6.
+- You must have Python 2.6+ or Python 3.4+.
 - NLTK http://www.nltk.org  2.0 installed. 
 - NumPy http://numpy.scipy.org
 - SentiWordNet http://sentiwordnet.isti.cnr.it 

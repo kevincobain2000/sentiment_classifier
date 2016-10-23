@@ -1,6 +1,6 @@
 #!/home/s1010205/bin/python2.7
 # -*- coding: utf-8 -*
-from __future__ import division
+from __future__ import division, print_function
 
 """
 USAGE
@@ -71,7 +71,7 @@ def app(environ, start_response):
        neg = neg/normalize_wsd
     results_json['Pos'] = pos
     results_json['Neg'] = neg
-    print json.dumps(results_json)
+    print(json.dumps(results_json))
     #WSD Hue ENDS Here ----------------------------------------->
     
 if __name__ == "__main__":
