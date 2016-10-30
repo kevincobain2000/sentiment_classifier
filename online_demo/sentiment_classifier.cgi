@@ -1,28 +1,30 @@
 #!/home/s1010205/bin/python2.7
 # -*- coding: utf-8 -*
-from __future__ import division
+from __future__ import division, print_function
 
 from __init__ import *
 import cPickle as pickle
 import datetime
 from nltk_classifiers import *
 
-def out_results(pos,neg, print_score=False):
-    if abs(pos-neg) <= 0.15 and neg != 0 and pos != 0:
-	print "<br>Text is <tt>Neutral/Hard To Classify</tt></br>"
-	print '<tt>Positive = %s<b><br>Negative = %s</b></tt>'%(pos,neg)
-        
+
+def out_results(pos, neg, print_score=False):
+    if abs(pos - neg) <= 0.15 and neg != 0 and pos != 0:
+        print("<br>Text is <tt>Neutral/Hard To Classify</tt></br>")
+        print('<tt>Positive = %s<b><br>Negative = %s</b></tt>'%(pos, neg))
     elif pos > neg:
-	print " Text is <tt><FONT COLOR=\"green\">POSITIVE</FONT></tt> <br>"
+        print(" Text is <tt><FONT COLOR=\"green\">POSITIVE</FONT></tt> <br>")
         if print_score:
-	  print '<tt><b>Positive = %s</b><br>Negative = %s</tt>'%(pos,neg)
+            print('<tt><b>Positive = %s</b><br>Negative = %s</tt>'%(pos,neg))
     else:
-	print " Text is <tt><FONT COLOR=\"red\">NEGATIVE</FONT></tt> <br>"
+        print(" Text is <tt><FONT COLOR=\"red\">NEGATIVE</FONT></tt> <br>")
         if print_score:
-	  print '<tt>Positive = %s<b><br>Negative = %s</b></tt>'%(pos,neg)
-    print '<br>'
+            print('<tt>Positive = %s<b><br>Negative = %s</b></tt>'%(pos,neg))
+    print('<br>')
+
 
 form = cgi.FieldStorage()
+
 
 def app(environ, start_response):
   start_response('200 OK', [('Content-Type', 'text/html')])
@@ -44,9 +46,9 @@ def app(environ, start_response):
         now = datetime.datetime.now()
         date_time = now.strftime("%Y-%m-%d %H:%M")
         f.write("\nEntry:%s"%date_time)
-    	f.write(" %s %s"%(domain,classifier_name))
-    	f.write("\n%s\n"%sent1)
-    print FORM
+        f.write(" %s %s"%(domain,classifier_name))
+        f.write("\n%s\n"%sent1)
+    print(FORM)
     r = re.compile("[,.?()\\d]+ *")
     lines_list = r.split(sent1)
     
@@ -56,9 +58,9 @@ def app(environ, start_response):
     subjective = classifier.prob_classify(tokens).prob('subjective')
     objective = classifier.prob_classify(tokens).prob('objective')
     if subjective > objective:
-       print "<br><tt><b>Subjectivity = %s</b><br>Objectivity &nbsp;= %s</tt>"%(subjective, objective)
-    else: print "<br><tt>Subjectivity = %s<br><b>Objectivity &nbsp;= %s</b></tt>"%(subjective, objective)
-    print "<hr><br>"
+       print("<br><tt><b>Subjectivity = %s</b><br>Objectivity &nbsp;= %s</tt>"%(subjective, objective))
+    else: print("<br><tt>Subjectivity = %s<br><b>Objectivity &nbsp;= %s</b></tt>"%(subjective, objective))
+    print("<hr><br>")
     #Classify Opinion Ends Here ----------------------------------------->
 
     #NLTK Classifiers Starts Here ----------------------------------------->
@@ -73,7 +75,7 @@ def app(environ, start_response):
        	   neg = classifier.prob_classify(tokens).prob('neg')
        	   pos = classifier.prob_classify(tokens).prob('pos')
 
-       	   print "<br>Results from %s on <tt>%s</tt> Corpus</br>"%(pickled_classifier.split('.')[0],domain)
+       	   print("<br>Results from %s on <tt>%s</tt> Corpus</br>"%(pickled_classifier.split('.')[0],domain))
        	   out_results(pos,neg, print_score=True)
     #NLTK Classifiers Ends Here ----------------------------------------->
 
@@ -85,7 +87,7 @@ def app(environ, start_response):
        pos = pos/normalize_wsd
        neg = neg/normalize_wsd
     
-       print "<br>Results from WSD SentiWordNet on <tt>%s</tt> Corpus</br>"%domain
+       print("<br>Results from WSD SentiWordNet on <tt>%s</tt> Corpus</br>"%domain)
        out_results(pos,neg, print_score=True)
     #WSD Hue ENDS Here ----------------------------------------->
     
