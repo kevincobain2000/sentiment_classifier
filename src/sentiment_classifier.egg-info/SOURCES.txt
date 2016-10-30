@@ -1,0 +1,13 @@
+MANIFEST.in
+README
+setup.py
+scripts/senti_classifier
+src/senti_classifier/__init__.py
+src/senti_classifier/classifiers.py
+src/senti_classifier/senti_classifier.py
+src/senti_classifier/data/__init__.py
+src/sentiment_classifier.egg-info/PKG-INFO
+src/sentiment_classifier.egg-info/SOURCES.txt
+src/sentiment_classifier.egg-info/dependency_links.txt
+src/sentiment_classifier.egg-info/requires.txt
+src/sentiment_classifier.egg-info/top_level.txt

@@ -1,0 +1,102 @@
+Metadata-Version: 1.1
+Name: sentiment-classifier
+Version: 0.7
+Summary: Sentiment Classification using Word Sense Disambiguation, Senti Word Net and word occurance statistics using movie review corpus
+Home-page: http://www.jaist.ac.jp/~s1010205/sentiment_classifier
+Author: KATHURIA Pulkit
+Author-email: pulkit@jaist.ac.jp
+License: LICENSE.txt
+Description: Sentiment Classification using WSD
+        ==================================
+        
+        - ``pip install sentiment_classifier``
+        - `Home <http://www.jaist.ac.jp/~s1010205/>`_
+        - `Download <http://pythonpackages.com/package/sentiment_classifier>`_
+        - `Github <https://github.com/kevincobain2000/sentiment_classifier>`_
+        - `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/>`_
+        
+        
+        Overview
+        --------
+        
+        Sentiment Classifier using Word Sense Disambiguation using ``wordnet`` and word occurance
+        statistics from movie review corpus ``nltk``. Classifies into positive and negative categories.
+        
+        Online Demo
+        -----------
+        
+        - `Try Online <http://www.jaist.ac.jp/~s1010205/sentiment_classifier/>`_
+        
+        
+        Requirements
+        ------------
+        
+        In ``Version 0.5`` all the following requirements are installed automatically. In case of troubles install those manually.
+        
+        - You must have Python 2.6.
+        - NLTK http://www.nltk.org  2.0 installed. 
+        - NumPy http://numpy.scipy.org
+        - SentiWordNet http://sentiwordnet.isti.cnr.it 
+        
+        
+        How to Install
+        --------------
+        
+        Shell command ::
+        
+          python setup.py install
+        
+        Documentation
+        -------------
+        
+        - http://pythonhosted.org/sentiment_classifier/
+          
+        
+        Script Usage
+        ------------
+        
+        Shell Commands::
+        
+          senti_classifier -c file/with/review.txt
+        
+        Python Usage
+        ------------
+        
+        Shell Commands ::
+        
+          cd sentiment_classifier/src/senti_classifier/
+          python senti_classifier.py -c reviews.txt
+        
+        Library Usage
+        -------------
+        
+        ::
+          
+            from senti_classifier import senti_classifier
+            sentences = ['The movie was the worst movie', 'It was the worst acting by the actors']
+            pos_score, neg_score = senti_classifier.polarity_scores(sentences)
+            print pos_score, neg_score
+            ... 0.0 1.75
+        
+        ::
+        
+          from senti_classifier.senti_classifier import synsets_scores
+          print synsets_scores['peaceful.a.01']['pos']
+          
+          ... 0.25
+        
+        
+        History
+        =======
+        
+        - ``0.6`` Bug Fixed upon nltk upgrade
+        - ``0.5`` No additional data required trained data is loaded automatically. Much faster/Optimized than previous versions.
+        - ``0.4`` Added Bag of Words as a Feature as occurance statistics
+        - ``0.3`` Sentiment Classifier First app, Using WSD module
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
