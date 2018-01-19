@@ -76,7 +76,7 @@ if __name__ == '__main__':
         train_set = get_train_set(texts)
         #classifier = NaiveBayesClassifier.train(train_set)
         #classifier = MaxentClassifier.train(train_set)
-        pickle.dump(classifier, open(pickled_classifier,'w'))
+        pickle.dump(classifier, open(pickled_classifier,'wb'))
     else: classifier = pickle.load(open(pickled_classifier,'r'))
     #classifier.show_most_informative_features(20)
 
