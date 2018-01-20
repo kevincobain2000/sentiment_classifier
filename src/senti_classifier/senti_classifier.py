@@ -174,8 +174,9 @@ def disambiguateWordSenses(sentence, word):
     wordsynsets = wn.synsets(word)
     bestScore = 0.0
     result = None
+    tokens = nltk.word_tokenize(sentence)
     for synset in wordsynsets:
-        for w in nltk.word_tokenize(sentence):
+        for w in tokens:
             score = 0.0
             for wsynset in wn.synsets(w):
                 sim = wn.path_similarity(wsynset, synset)
@@ -209,8 +210,9 @@ def classify(text, synsets_scores, bag_of_words):
             sentence = sentence.strip()
             sent_score_pos = sent_score_neg = 0
             for word in sentence.split():
-                if disambiguateWordSenses(sentence, word):
-                    disamb_syn = disambiguateWordSenses(sentence, word).name()
+                disambiguate_word_senses = disambiguateWordSenses(sentence, word)
+                if disambiguate_word_senses:
+                    disamb_syn = disambiguate_word_senses.name()
                     if disamb_syn in synsets_scores:
                         #uncomment the disamb_syn.split... if also want to check synsets polarity
                         if word.lower() in bag_of_words['neg']:
