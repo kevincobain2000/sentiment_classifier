@@ -174,7 +174,6 @@ def disambiguateWordSenses(sentence, word):
     wordsynsets = wn.synsets(word)
     bestScore = 0.0
     result = None
-    tokens = nltk.word_tokenize(sentence)
     for synset in wordsynsets:
         for w in tokens:
             score = 0.0
@@ -208,9 +207,10 @@ def classify(text, synsets_scores, bag_of_words):
             continue
         for sentence in line.split('.'):
             sentence = sentence.strip()
+            tokens = nltk.word_tokenize(sentence)
             sent_score_pos = sent_score_neg = 0
             for word in sentence.split():
-                disambiguate_word_senses = disambiguateWordSenses(sentence, word)
+                disambiguate_word_senses = disambiguateWordSenses(tokens, word)
                 if disambiguate_word_senses:
                     disamb_syn = disambiguate_word_senses.name()
                     if disamb_syn in synsets_scores:
