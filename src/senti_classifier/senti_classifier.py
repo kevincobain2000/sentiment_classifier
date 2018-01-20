@@ -170,7 +170,7 @@ def word_similarity(word1, word2):
     return maxsim
 
 
-def disambiguateWordSenses(sentence, word):
+def disambiguateWordSenses(tokens, word):
     wordsynsets = wn.synsets(word)
     bestScore = 0.0
     result = None
