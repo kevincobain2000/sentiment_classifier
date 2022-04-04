@@ -227,8 +227,8 @@ def classify(text, synsets_scores, bag_of_words):
 #==========  Skipping pickle for a while  ==========*/
 
 # temporary fix for "no module named collections" error in some cases due to unexpected \r in .p files
-senti_pickle = resource_stream('senti_classifier', 'data/SentiWn.p').read().replace('\r', '')
-bag_of_words_pickle = resource_stream('senti_classifier', 'data/bag_of_words.p').read().replace('\r', '')
+senti_pickle = resource_stream('senti_classifier', 'data/SentiWn.p').read().replace(b'\r', b'')
+bag_of_words_pickle = resource_stream('senti_classifier', 'data/bag_of_words.p').read().replace(b'\r', b'')
 synsets_scores = pickle.loads(senti_pickle)
 bag_of_words = pickle.loads(bag_of_words_pickle)
 # #
